@@ -19,6 +19,11 @@
   left: -100000px;
 }
 
+.center {
+  text-align: center;
+  margin: 1.5rem;
+}
+
 body {
   background-color: var(--BGCOLOR-BODY);
   align-items: center;
@@ -88,9 +93,10 @@ section * {
 .about {
   font-size: 1.2rem;
 }
-.about h2 {
+.title {
   color: var(--SECONDARY-COLOR);
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .about h3 {
@@ -194,6 +200,73 @@ footer {
   color: white;
   background-color: black;
   text-align: center;
-  position: sticky;
+  position: fixed;
   bottom: 0;
+}
+
+.form {
+  display: grid;
+  border-radius: 20px;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "name message"
+    "email message";
+  font-size: 1.5rem;
+  grid-auto-rows: 120px;
+}
+
+.form__input {
+  background-color: black;
+  color: white;
+}
+
+.form__label {
+  color: var(--SECONDARY-COLOR);
+  font-weight: bold;
+}
+
+.form__name {
+  grid-area: "name";
+}
+
+.form__message {
+  grid-area: "message";
+}
+
+.form__email {
+  grid-area: "email";
+}
+
+.form__btn {
+  font-size: 1.2rem;
+  background-color: var(--SECONDARY-COLOR);
+  border-radius: 10px;
+  color: white;
+  padding: 0.3rem;
+}
+
+.hours {
+  margin: 0.5rem;
+  border: 5px solid var(--SECONDARY-COLOR);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.bh {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.bh a {
+  color: black;
+}
+
+.day {
+  font-weight: bold;
 }

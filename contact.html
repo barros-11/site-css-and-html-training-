@@ -32,40 +32,48 @@
             </figure>
             <article class="contacts">
                 <section>
-                    <h2>Our Contact Form</h2>
+                    <h2 class="title">Our Contact Form</h2>
                     <form action="https://httpbin.org/post" method="post">
-                        <fieldset>
-                            <legend>Send Us a Message</legend>
-                            <div>
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name"
+                        <fieldset class="form">
+                            <legend>Send us a message</legend>
+                            <div class="form__name">
+                                <label class="form__label"
+                                    for="name">Name:</label>
+                                <input class="form__input" type="text" id="name"
+                                    name="name"
                                     placeholder="Your name" autocomplete="off"
                                     required>
                             </div>
-                            <br>
-                            <div>
-                                <label for="email">Email:</label>
-                                <input type="text" name="email" id="email"
+                            <div class="form__email">
+                                <label class="form__label"
+                                    for="email">Email:</label>
+                                <input class="form__input" type="text"
+                                    name="email"
+                                    id="email"
                                     placeholder="Your email"
                                     required>
                             </div>
-                            <br>
-                            <div>
-                                <label for="message">Your Message:</label> <br>
-                                <textarea name="message" id="message" cols="30"
+                            <div class="form_message">
+                                <label class="form__label" for="message">Your
+                                    Message:</label> <br>
+                                <textarea class="form__input" name="message"
+                                    id="message" cols="30"
                                     rows="10"
                                     placeholder="Type your message here"></textarea>
                             </div>
                         </fieldset>
                         <div>
-                            <button type="submit">Submit</button>
-                            <button type="reset">Reset</button>
+                            <button class="form__btn"
+                                type="submit">Submit</button>
+                            <button class="form__btn"
+                                type="reset">Reset</button>
                         </div>
 
                     </form>
                 </section>
+                <hr>
                 <section>
-                    <h2>Our Location</h2>
+                    <h2 class="title">Our Location</h2>
                     <div>
                         <address>
                             555 Taco Temptation Lane,Suite T <br>
@@ -75,6 +83,7 @@
                     </div>
                 </section>
             </article>
+            <p class="bh"><a href="#">Back To Top</a></p>
         </main>
         <hr>
         <footer>
